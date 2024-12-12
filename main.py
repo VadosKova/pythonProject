@@ -2,6 +2,9 @@
 from tkinter import *
 import os
 
+def hello():
+    print("Hello world")
+
 def analyze():
     path = entry.get()
     condition = c1.get()
