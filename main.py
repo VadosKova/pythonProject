@@ -15,3 +15,9 @@ class Calc:
             return "Error"
         else:
             return a / b
+
+calc = Calc()
+a = 5
+b = 7
+
+print(f"{calc.plus(a, b)}\n{calc.minus(a, b)}\n{calc.multiply(a, b)}\n{calc.divide(a, b)}")
