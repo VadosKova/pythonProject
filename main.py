@@ -1,17 +1,6 @@
 #Задание 1
 
-class Calc:
-    def plus(self, a, b):
-        return a + b
+from tkinter import *
+from tkinter import ttk
 
-    def minus(self, a, b):
-        return a - b
-
-    def multiply(self, a, b):
-        return a * b
-
-    def divide(self, a, b):
-        if b == 0:
-            return "Error"
-        else:
-            return a / b
+rates = { "USD": 0.027, "EUR": 0.025, "PLN": 0.12, "GBP": 0.022 }
