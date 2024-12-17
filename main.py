@@ -25,6 +25,7 @@ def convert():
 
 
 root = Tk()
+root.geometry("300x300")
 root.title("Курс валют")
 
 Label(root, text="Сумма в гривне:").pack()
@@ -35,3 +36,12 @@ entry.pack()
 currency_combobox = ttk.Combobox(root, values=["Выберите валюту", "USD", "EUR", "PLN", "GBP"])
 currency_combobox.set("Выберите валюту")
 currency_combobox.pack()
+
+convert_btn = Button(root, text="Convert", command=convert)
+convert_btn.pack(pady=10)
+
+result_label = Label(root, text="Результат: ")
+result_label.pack()
+
+
+root.mainloop()
