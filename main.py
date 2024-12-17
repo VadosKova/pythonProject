@@ -16,7 +16,7 @@ def convert():
     currency = currency_combobox.get()
 
     if currency == "Выберите валюту":
-        result_label.config(text="Выберите валюту!")
+        result_label.config(text="Выберите валюту")
         return
 
     rate = rates[currency]
@@ -28,3 +28,10 @@ root = Tk()
 root.title("Курс валют")
 
 Label(root, text="Сумма в гривне:").pack()
+
+entry = Entry(root)
+entry.pack()
+
+currency_combobox = ttk.Combobox(root, values=["Выберите валюту", "USD", "EUR", "PLN", "GBP"])
+currency_combobox.set("Выберите валюту")
+currency_combobox.pack()
