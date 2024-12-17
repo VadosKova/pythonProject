@@ -11,3 +11,10 @@ def convert():
     if not num.isdigit() or float(num) <= 0:
         result_label.config(text="Должно быть положительное число")
         return
+
+    amount = float(num)
+    currency = currency_combobox.get()
+
+    if currency == "Выберите валюту":
+        result_label.config(text="Выберите валюту!")
+        return
