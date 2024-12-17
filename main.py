@@ -22,3 +22,9 @@ def convert():
     rate = rates[currency]
     result = amount * rate
     result_label.config(text=f"{amount} ₴ = {result} {currency}")
+
+
+root = Tk()
+root.title("Курс валют")
+
+Label(root, text="Сумма в гривне:").pack()
