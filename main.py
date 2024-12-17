@@ -18,3 +18,7 @@ def convert():
     if currency == "Выберите валюту":
         result_label.config(text="Выберите валюту!")
         return
+
+    rate = rates[currency]
+    result = amount * rate
+    result_label.config(text=f"{amount} ₴ = {result} {currency}")
